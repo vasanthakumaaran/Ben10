@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800);
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+	background: black;
+}
+.container{
+	width: 100%;
+	height: 535px;
+}
+#bracelet img{
+	position: absolute;
+	width: 980px;
+	top: 16%;
+	left: 5%;
+}
+.watch{
+	width: 200px;
+	height: 150px;
+	left: 430px;
+	top: 120px;
+	z-index: 10;
+	position: absolute;
+	box-shadow: 8px 8px 8px green,-2px -2px 3px green;
+	background: yellow;
+	border-radius: 50%;
+	border: 15px solid black;
+	transform-style: preserve-3d;
+	transform:perspective(1000px) rotateX(68deg);
+}
+.display{
+	margin: auto;
+	width: 0px;
+	height: 0px;
+	left:-5px;
+	bottom: -30px;
+	position:absolute;
+	background: rgba(0, 230, 64, .8);
+	border: 88px solid;
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+}
+.watch:hover .display{
+	transform: rotateZ(30deg);
+	transition: .3s;
+}
+.watch img{
+	position: absolute;
+	top: -80%;
+	left: -8%;
+	width: 180px;
+	height: 180px;
+	z-index: 10;
+	transform-style: preserve-3d;
+	transform: rotateX(300deg) translateZ(250px);
+	visibility: hidden;
+}
+.watch:hover img{
+	visibility: visible;
+	transition-delay: .3s;
+}
+#shadow{
+	width: 158px;
+	height: 120px;
+	background: linear-gradient(rgba(0,230,64,.1),rgba(0,230,64,.5));
+	position: absolute;
+	top: -10%;
+	left: 4%;
+	border-bottom: transparent;
+	transform-style: preserve-3d;
+	transform-origin: bottom;
+	transform:perspective(150px) rotateX(320deg);
+	visibility: hidden;
+}
+.watch:hover #shadow{
+	visibility: visible;
+	transition-delay: .3s;
+}
