@@ -23,8 +23,8 @@ body{
 .watch{
 	width: 200px;
 	height: 150px;
-	left: 430px;
-	top: 120px;
+	left: 420px;
+	top: 150px;
 	z-index: 10;
 	position: absolute;
 	box-shadow: 8px 8px 8px green,-2px -2px 3px green;
@@ -47,32 +47,34 @@ body{
 	border-bottom-color: transparent;
 	border-top-color: transparent;
 }
-.watch:hover .display{
-	transform: rotateZ(30deg);
-	transition: .3s;
-}
+   .watch:hover .display{
+	transform: rotateZ(30deg); 
+	transition: .3s;}
+ 
 .watch img{
 	position: absolute;
-	top: -80%;
-	left: -8%;
-	width: 180px;
-	height: 180px;
+	top: -120%;
+	left: 7%;
+	width: 160px;
+	height: 200px;
 	z-index: 10;
 	transform-style: preserve-3d;
 	transform: rotateX(300deg) translateZ(250px);
 	visibility: hidden;
+
 }
-.watch:hover img{
+ .watch:hover img{
 	visibility: visible;
-	transition-delay: .3s;
+	transition-delay: .3s; 
 }
+ 
 #shadow{
-	width: 158px;
-	height: 120px;
+	width: 180px;
+	height: 150px;
 	background: linear-gradient(rgba(0,230,64,.1),rgba(0,230,64,.5));
 	position: absolute;
-	top: -10%;
-	left: 4%;
+	top: -50%;
+	left: -8%;
 	border-bottom: transparent;
 	transform-style: preserve-3d;
 	transform-origin: bottom;
