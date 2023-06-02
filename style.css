@@ -11,22 +11,26 @@ body{
 	background: black;
 }
 .container{
-	width: 100%;
+	display: flex;
+	align-items: center;
+	width: 100px;
 	height: 535px;
+	
 }
 #bracelet img{
 	position: absolute;
 	width: 980px;
-	top: 16%;
-	left: 5%;
+	top: 100px;
+	left: 50px;
 }
 .watch{
+	position: absolute;
 	width: 200px;
 	height: 150px;
-	left: 420px;
-	top: 150px;
+	left: 460px;
+	top: 140px;
 	z-index: 10;
-	position: absolute;
+	
 	box-shadow: 8px 8px 8px green,-2px -2px 3px green;
 	background: yellow;
 	border-radius: 50%;
@@ -84,4 +88,37 @@ body{
 .watch:hover #shadow{
 	visibility: visible;
 	transition-delay: .3s;
+}
+
+ 
+	@media screen and (max-width:600px) {
+	
+		.watch{
+			width: 200px;
+			height: 180px;
+			left: 450px;
+			top: 130px;
+			z-index: 10;
+			position: absolute;
+			box-shadow: 8px 8px 8px green,-2px -2px 3px green;
+			background: yellow;
+			border-radius: 50%;
+			border: 15px solid black;
+			transform-style: preserve-3d;
+			transform:perspective(1000px) rotateX(68deg);
+		}
+		.display{
+			margin: auto;
+			width: 0px;
+			height: 0px;
+			left:-4px;
+			bottom: -20px;
+			position:absolute;
+			background: rgba(0, 230, 64, .8);
+			border: 88px solid;
+			border-radius: 50%;
+			border-bottom-color: transparent;
+			border-top-color: transparent;
+		}
+
 }
